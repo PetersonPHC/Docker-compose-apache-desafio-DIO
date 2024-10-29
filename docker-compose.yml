@@ -1,0 +1,9 @@
+services:
+  apache:
+    image: httpd:latest
+    container_name: meu-container-clone-netflix
+    ports:
+      - 8080:80
+
+    volumes:
+      - "../../site-clone-netflix:/usr/local/apache2/htdocs"
